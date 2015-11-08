@@ -59,7 +59,6 @@ CREATE TABLE F15_A3_Emp
     employee_id        INTEGER NOT NULL ,
     F15_A3_Lab_lab_id  INTEGER ,
     employee_name      VARCHAR2 (30) NOT NULL ,
-    employee_lab       VARCHAR2 (4) NOT NULL ,
     employee_email     VARCHAR2 (255) NOT NULL ,
     employee_office    VARCHAR2 (255) NOT NULL ,
     employee_phone     VARCHAR2 (255) NOT NULL ,
