@@ -1,0 +1,253 @@
+drop view F15_A3_Lab_Employee_view;
+drop view F15_A3_Lab_Sys_Admin_view;
+drop view F15_A3_Lab_Director_view;
+drop view F15_A3_Exec_Director_view;
+drop view F15_A3_Chairperson_view;
+
+create view F15_A3_Lab_Employee_view as
+SELECT 
+    employee_id,
+    employee_name,
+    employee_lab,
+    employee_email,
+    employee_office,
+    employee_phone,
+    employee_status,
+    status_eff_date,
+    system_admin_flag,
+    lab_director_flag,
+    exec_director_flag,
+    chairperson_flag
+FROM F15_A3_Emp where system_admin_flag = 'N'
+	AND lab_director_flag = 'N'
+	AND exec_director_flag = 'N'
+	AND chairperson_flag = 'N';
+
+create or replace TRIGGER F15_A3_Lab_Employee_trigger
+     INSTEAD OF insert ON F15_A3_Lab_Employee_view
+     FOR EACH ROW
+BEGIN
+    insert into F15_A3_Emp( 
+		employee_id,
+	    employee_name,
+	    employee_lab,
+	    employee_email,
+	    employee_office,
+	    employee_phone,
+	    employee_status,
+	    status_eff_date,
+	    system_admin_flag,
+	    lab_director_flag,
+	    exec_director_flag,
+	    chairperson_flag)
+		 VALUES ( 
+		:NEW.employee_id,
+	    :NEW.employee_name,
+	    :NEW.employee_lab,
+	    :NEW.employee_email,
+	    :NEW.employee_office,
+	    :NEW.employee_phone,
+	    :NEW.employee_status,
+	    :NEW.status_eff_date,
+	    'N',
+	    'N',
+	    'N',
+	    'N') ;
+END;
+/
+
+create view F15_A3_Lab_Director_view as
+SELECT 
+    employee_id,
+    employee_name,
+    employee_lab,
+    employee_email,
+    employee_office,
+    employee_phone,
+    employee_status,
+    status_eff_date,
+    system_admin_flag,
+    lab_director_flag,
+    exec_director_flag,
+    chairperson_flag
+FROM F15_A3_Emp where lab_director_flag = 'Y';
+
+create or replace TRIGGER F15_A3_Lab_Director_trigger
+     INSTEAD OF insert ON F15_A3_Lab_Director_view
+     FOR EACH ROW
+BEGIN
+    insert into F15_A3_Emp( 
+		employee_id,
+	    employee_name,
+	    employee_lab,
+	    employee_email,
+	    employee_office,
+	    employee_phone,
+	    employee_status,
+	    status_eff_date,
+	    system_admin_flag,
+	    lab_director_flag,
+	    exec_director_flag,
+	    chairperson_flag)
+		 VALUES ( 
+		:NEW.employee_id,
+	    :NEW.employee_name,
+	    :NEW.employee_lab,
+	    :NEW.employee_email,
+	    :NEW.employee_office,
+	    :NEW.employee_phone,
+	    :NEW.employee_status,
+	    :NEW.status_eff_date,
+	    'N',
+	    'Y',
+	    'N',
+	    'N') ;
+END;
+/
+
+create view F15_A3_Lab_Sys_Admin_view as
+SELECT 
+    employee_id,
+    employee_name,
+    employee_lab,
+    employee_email,
+    employee_office,
+    employee_phone,
+    employee_status,
+    status_eff_date,
+    system_admin_flag,
+    lab_director_flag,
+    exec_director_flag,
+    chairperson_flag
+FROM F15_A3_Emp where system_admin_flag = 'Y';
+
+create or replace TRIGGER F15_A3_Lab_Sys_Admin_trigger
+     INSTEAD OF insert ON F15_A3_Lab_Sys_Admin_view
+     FOR EACH ROW
+BEGIN
+    insert into F15_A3_Emp( 
+		employee_id,
+	    employee_name,
+	    employee_lab,
+	    employee_email,
+	    employee_office,
+	    employee_phone,
+	    employee_status,
+	    status_eff_date,
+	    system_admin_flag,
+	    lab_director_flag,
+	    exec_director_flag,
+	    chairperson_flag)
+		 VALUES ( 
+		:NEW.employee_id,
+	    :NEW.employee_name,
+	    :NEW.employee_lab,
+	    :NEW.employee_email,
+	    :NEW.employee_office,
+	    :NEW.employee_phone,
+	    :NEW.employee_status,
+	    :NEW.status_eff_date,
+	    'Y',
+	    'N',
+	    'N',
+	    'N') ;
+END;
+/
+
+create view F15_A3_Exec_Director_view as
+SELECT 
+    employee_id,
+    employee_name,
+    employee_lab,
+    employee_email,
+    employee_office,
+    employee_phone,
+    employee_status,
+    status_eff_date,
+    system_admin_flag,
+    lab_director_flag,
+    exec_director_flag,
+    chairperson_flag
+FROM F15_A3_Emp where exec_director_flag = 'Y';
+
+create or replace TRIGGER F15_A3_Exec_Director_trigger
+     INSTEAD OF insert ON F15_A3_Exec_Director_view
+     FOR EACH ROW
+BEGIN
+    insert into F15_A3_Emp( 
+		employee_id,
+	    employee_name,
+	    employee_lab,
+	    employee_email,
+	    employee_office,
+	    employee_phone,
+	    employee_status,
+	    status_eff_date,
+	    system_admin_flag,
+	    lab_director_flag,
+	    exec_director_flag,
+	    chairperson_flag)
+		 VALUES ( 
+		:NEW.employee_id,
+	    :NEW.employee_name,
+	    :NEW.employee_lab,
+	    :NEW.employee_email,
+	    :NEW.employee_office,
+	    :NEW.employee_phone,
+	    :NEW.employee_status,
+	    :NEW.status_eff_date,
+	    'N',
+	    'N',
+	    'Y',
+	    'N') ;
+END;
+/
+
+create view F15_A3_Chairperson_view as
+SELECT 
+    employee_id,
+    employee_name,
+    employee_lab,
+    employee_email,
+    employee_office,
+    employee_phone,
+    employee_status,
+    status_eff_date,
+    system_admin_flag,
+    lab_director_flag,
+    exec_director_flag,
+    chairperson_flag
+FROM F15_A3_Emp where chairperson_flag = 'Y';
+
+create or replace TRIGGER F15_A3_Chairperson_trigger
+     INSTEAD OF insert ON F15_A3_Chairperson_view
+     FOR EACH ROW
+BEGIN
+    insert into F15_A3_Emp( 
+		employee_id,
+	    employee_name,
+	    employee_lab,
+	    employee_email,
+	    employee_office,
+	    employee_phone,
+	    employee_status,
+	    status_eff_date,
+	    system_admin_flag,
+	    lab_director_flag,
+	    exec_director_flag,
+	    chairperson_flag)
+		 VALUES ( 
+		:NEW.employee_id,
+	    :NEW.employee_name,
+	    :NEW.employee_lab,
+	    :NEW.employee_email,
+	    :NEW.employee_office,
+	    :NEW.employee_phone,
+	    :NEW.employee_status,
+	    :NEW.status_eff_date,
+	    'N',
+	    'N',
+	    'N',
+	    'Y') ;
+END;
+/
