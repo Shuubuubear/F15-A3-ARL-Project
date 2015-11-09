@@ -132,7 +132,6 @@ CREATE TABLE F15_A3_RFE_TC
   (
     comment_id             INTEGER NOT NULL ,
     F15_A3_RFE_rfe_id      INTEGER NOT NULL ,
-    entered_by_emp_id      INTEGER NOT NULL ,
     comment_entry_date     DATE NOT NULL ,
     comments               VARCHAR2 (4000) NOT NULL ,
     F15_A3_Emp_employee_id INTEGER
