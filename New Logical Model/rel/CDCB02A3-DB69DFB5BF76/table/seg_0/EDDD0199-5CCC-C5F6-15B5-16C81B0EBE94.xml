@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EDDD0199-5CCC-C5F6-15B5-16C81B0EBE94" name="F15_A3_RTC">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-08 01:15:22 UTC</createdTime>
+<generatorID>D210283E-B739-5A63-1B64-C3C4D7283890</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="role_code" id="54478E80-03F8-0AF7-57DC-1BE6E6A018DB">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-08 01:15:22 UTC</createdTime>
+<generatorID>519BC064-30E5-5239-099B-AF5A6AB5108C</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="role_type" id="2AF0D1D1-34D4-2C63-8399-31E8B611E4BC">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-08 01:15:22 UTC</createdTime>
+<generatorID>65649040-A077-E551-0E9E-DBF47FA42143</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="BA2F1656-E74F-7834-216C-7095015B8A4B">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-08 01:15:22 UTC</createdTime>
+<generatorID>B42D594D-C26B-A8E1-24A3-8C98BFB1A120</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="96FA51A2-DF87-D75A-7412-EB004F2020B7" name="F15_A3_RTC_PK">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-08 01:15:22 UTC</createdTime>
+<generatorID>99A4D344-283C-C62C-1772-3D2C03DAE378</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54478E80-03F8-0AF7-57DC-1BE6E6A018DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

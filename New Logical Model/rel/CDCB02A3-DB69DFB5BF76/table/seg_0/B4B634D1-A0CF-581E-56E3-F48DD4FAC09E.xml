@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B4B634D1-A0CF-581E-56E3-F48DD4FAC09E" name="F15_A3_RFE_S">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-08 01:15:22 UTC</createdTime>
+<generatorID>9C369A72-1271-EAAA-EF81-28BD3716BB6A</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="status_id" id="240F7827-0B49-5CA9-9128-94185A89EF58">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-08 01:15:22 UTC</createdTime>
+<generatorID>42C71A8B-92DE-1125-E604-E8DE5938AC05</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15_A3_RFE_SC_status_code" id="191961AC-B4B6-F72A-A2FA-5F78181DB9F0">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-08 01:15:22 UTC</createdTime>
+<generatorID>F21560BF-D393-A52B-687F-F1DD6033F8BF</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D905C1FE-0AFC-EFC9-77E6-D76A4FA823A2" referredColumn="45F25605-EBC6-27B9-0998-0CCA9FD22241"/>
+</associations>
+</Column>
+<Column name="F15_A3_RFE_rfe_id" id="5F4449CB-666A-30E4-DD12-FAE7DBAFC3E9">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-08 01:15:22 UTC</createdTime>
+<generatorID>8E962145-4C04-94A0-11B6-E7580E16282B</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B623AC21-0D82-CCAF-08C7-43143B778CFA" referredColumn="3C1A8072-DDBB-F156-8E04-D1F526B0001D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D21FEA85-E1E2-FF7A-CD70-303ED0127859" name="F15_A3_RFE_S_PK">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-08 01:15:22 UTC</createdTime>
+<generatorID>DBA18936-6299-B5F4-02FC-FF1CE91A2E56</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="240F7827-0B49-5CA9-9128-94185A89EF58"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="43E4C02C-FD41-898B-673D-A79EB69569A1" name="F15_A3_RFE_S_F15_A3_RFE_SC_FK">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-08 01:15:22 UTC</createdTime>
+<generatorID>27C51401-7A41-B2D0-542F-CEE79EA7CA06</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="191961AC-B4B6-F72A-A2FA-5F78181DB9F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B9794F0-5E1D-7629-3F19-2E7D98FD20D0" name="F15_A3_RFE_S_F15_A3_RFE_FK">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-08 01:15:22 UTC</createdTime>
+<generatorID>B9463C4C-BA77-0E06-B261-62AE9E2DDD5A</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F4449CB-666A-30E4-DD12-FAE7DBAFC3E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8773874D-3EF4-3168-0D32-CCFCC7D90879" name="F15_A3_RFE_TC">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-07 23:25:35 UTC</createdTime>
+<ownerDesignName>New Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="212072FE-8EF8-06E3-52C9-55E96A5B12C3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="comment_id" id="5EACC83C-DB60-2693-AD33-B27258E3876A">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-07 23:42:37 UTC</createdTime>
+<ownerDesignName>New Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="212072FE-8EF8-06E3-52C9-55E96A5B12C3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="5CBA0071-80EA-05D7-E4B5-2343F3DEF407">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-07 23:25:35 UTC</createdTime>
+<generatorID>3A148B01-1A36-CCA0-951A-186D311C6AA7</generatorID>
+<ownerDesignName>New Conceptual Model</ownerDesignName>
+<importedID>718D3666-0661-737F-B4F5-6DAB1E01713A</importedID>
+<engineerTo>
+<item key="212072FE-8EF8-06E3-52C9-55E96A5B12C3" value="true"/>
+</engineerTo>
+<referedAttribute>982E66C4-BF90-A8D7-9E82-3DDD5925F410</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_id" id="4A7C1557-D403-BFAF-991F-D6536460850D">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-08 02:13:27 UTC</createdTime>
+<generatorID>95E98135-377C-8527-01A3-90AD2027A38F</generatorID>
+<ownerDesignName>New Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="212072FE-8EF8-06E3-52C9-55E96A5B12C3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>0268BA88-B86C-0C66-895C-9134C4BDB940</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comment_entry_date" id="4B8E491C-4038-6C94-E34C-4FF86BDF8303">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-07 23:25:35 UTC</createdTime>
+<ownerDesignName>New Conceptual Model</ownerDesignName>
+<importedID>D377F39F-C898-2D4F-075D-5D545FD9E92A</importedID>
+<engineerTo>
+<item key="212072FE-8EF8-06E3-52C9-55E96A5B12C3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comments" id="BA0E67B3-7919-7C53-4E80-F283FB14159D">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-07 23:25:35 UTC</createdTime>
+<ownerDesignName>New Conceptual Model</ownerDesignName>
+<importedID>098D5F7A-799F-E6BC-EFFE-3689B8A4B26A</importedID>
+<engineerTo>
+<item key="212072FE-8EF8-06E3-52C9-55E96A5B12C3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A86F42C1-93E4-C01E-BB3C-4445FD991CE5" name="F15_A3_RFE_TC PK">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-07 23:42:59 UTC</createdTime>
+<ownerDesignName>New Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="212072FE-8EF8-06E3-52C9-55E96A5B12C3" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5EACC83C-DB60-2693-AD33-B27258E3876A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

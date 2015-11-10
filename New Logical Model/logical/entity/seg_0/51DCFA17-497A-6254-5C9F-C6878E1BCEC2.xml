@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="51DCFA17-497A-6254-5C9F-C6878E1BCEC2" name="F15_A3_RFE_Doc">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-08 00:30:03 UTC</createdTime>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<engineerTo>
+<item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="document_id" id="27B4F9FA-4DC5-08F9-60B2-275732CF22AD">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-08 00:30:03 UTC</createdTime>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<importedID>E612A655-AB9B-8228-1B70-5B3ABE9EFE4B</importedID>
+<engineerTo>
+<item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="8BF39849-88C0-285C-8FF6-E682E98284AF">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-08 00:30:03 UTC</createdTime>
+<generatorID>7A540A9E-873C-2AF4-2B4A-3803F3ADA20B</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<importedID>A34D7B38-255C-5EBF-2B62-9AC024D1EC3A</importedID>
+<engineerTo>
+<item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="true"/>
+</engineerTo>
+<referedAttribute>B09C5FC0-24ED-E061-4FA5-A8F38A14D605</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="filename" id="96A174E7-FAD0-1B8C-46E8-5077D1427C3D">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-08 00:30:03 UTC</createdTime>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<importedID>8EB8B8A9-DE74-8917-2B1D-99EF321721F6</importedID>
+<engineerTo>
+<item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="file_mimetype" id="E8B2E275-9A91-B698-7818-AF789F08E571">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-08 00:30:03 UTC</createdTime>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<importedID>614F8764-9D79-C8E9-4B8C-4A2CA6113576</importedID>
+<engineerTo>
+<item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<ownDataTypeParameters>512,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="file_charset" id="E1F7724C-0F56-D83F-08D4-F86F664FD589">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-08 00:30:03 UTC</createdTime>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<importedID>711AE81D-6C95-B272-CB01-3ADABB60B9C3</importedID>
+<engineerTo>
+<item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<ownDataTypeParameters>512,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="file_blob" id="D44D616A-BC7F-59FD-5C12-81CFEE6FA149">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-08 00:30:03 UTC</createdTime>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<importedID>4138396C-19BD-DF83-38DC-92A0DBF8D350</importedID>
+<engineerTo>
+<item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="file_comments" id="BCE0EAB5-AD69-7968-0C0F-D7F581E6D792">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-08 00:30:03 UTC</createdTime>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<importedID>98645E91-B725-9F5A-DEFF-977906A90453</importedID>
+<engineerTo>
+<item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tags" id="EE52C113-59F0-1E5A-3089-BE9FF1AF7961">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-08 00:30:03 UTC</createdTime>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<importedID>49B3E11F-00FE-C0FB-A9D4-CEAEF63AC969</importedID>
+<engineerTo>
+<item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7E15713C-49C3-0217-241E-ADE2EBABAABA" name="F15_A3_RFE_Doc PK">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-08 00:30:03 UTC</createdTime>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>27B4F9FA-4DC5-08F9-60B2-275732CF22AD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
