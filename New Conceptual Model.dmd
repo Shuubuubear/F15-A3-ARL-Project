@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="New Conceptual Model" id="10192408-CCAC-E577-7D14-76B4F3FB5F08" version="3.5">
-<createdBy>Nick</createdBy>
-<createdTime>2015-10-19 20:29:23 UTC</createdTime>
-<ownerDesignName>RFE_Conceptual</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>10192408-CCAC-E577-7D14-76B4F3FB5F08</designId>
-</OSDM_Design>

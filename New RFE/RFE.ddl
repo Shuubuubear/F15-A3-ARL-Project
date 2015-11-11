@@ -132,7 +132,6 @@ CREATE TABLE F15_A3_RFE_TC
   (
     comment_id             INTEGER NOT NULL ,
     F15_A3_RFE_rfe_id      INTEGER NOT NULL ,
-    comment_entry_date     DATE NOT NULL ,
     comments               VARCHAR2 (4000) NOT NULL ,
     F15_A3_Emp_employee_id INTEGER
   ) ;
@@ -184,8 +183,8 @@ ALTER TABLE F15_A3_RFE_TC ADD CONSTRAINT F15_A3_RFE_TC_F15_A3_RFE_FK FOREIGN KEY
 ALTER TABLE F15_A3_RFE_Task ADD CONSTRAINT F15_A3_RFE_Task_F15_A3_RFE_FK FOREIGN KEY ( F15_A3_RFE_rfe_id ) REFERENCES F15_A3_RFE ( rfe_id ) ;
 
 
--- Oracle SQL Developer Data Modeler Summary Report: 
--- 
+-- Oracle SQL Developer Data Modeler Summary Report:
+--
 -- CREATE TABLE                            11
 -- CREATE INDEX                             2
 -- ALTER TABLE                             23
@@ -213,15 +212,15 @@ ALTER TABLE F15_A3_RFE_Task ADD CONSTRAINT F15_A3_RFE_Task_F15_A3_RFE_FK FOREIGN
 -- CREATE SYNONYM                           0
 -- CREATE TABLESPACE                        0
 -- CREATE USER                              0
--- 
+--
 -- DROP TABLESPACE                          0
 -- DROP DATABASE                            0
--- 
+--
 -- REDACTION POLICY                         0
--- 
+--
 -- ORDS DROP SCHEMA                         0
 -- ORDS ENABLE SCHEMA                       0
 -- ORDS ENABLE OBJECT                       0
--- 
+--
 -- ERRORS                                   0
 -- WARNINGS                                 0
