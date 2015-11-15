@@ -438,26 +438,6 @@ begin
 end; 
 /
 
-CREATE OR REPLACE TRIGGER rfe_after_delete
-AFTER DELETE ON F15_A3_RFE
-BEGIN
-  DELETE FROM F15_A3_RFE_S
-    WHERE status_id = :old.status_id;
-  
-  DELETE FROM F15_A3_RFE_DOC
-    WHERE rfe_id = :old.rfe_id;
-    
-  DELTE FROM F15_A3_RFE_TASK
-    WHERE rfe_id = :old.rfe_id;
-    
-  DELETE FROM F15_A3_RFE_TC
-    WHERE rfe_id = :old.rfe_id;
-    
-  DELETE FROM F15_A3_CONTACT
-    WHERE rfe_id = :old.rfe_id;
-END;
-/
-
 DROP INDEX F15_A3_Emp_employee_id_FK_0 ;
 CREATE INDEX F15_A3_Emp_employee_id_FK_0 ON F15_A3_Auth(F15_A3_Emp_employee_id) ;
 DROP INDEX F15_A3_Emp_employee_id_FK_1 ;
