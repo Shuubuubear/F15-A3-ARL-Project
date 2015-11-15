@@ -6,3 +6,4 @@ Oracle APEX application: https://apex.oracle.com/pls/apex/f?p=93744:1:1133114752
 Documentation:
 http://www.cs.utexas.edu/~cannata/dbms/Project/
 
+Run Populate.ddl in APEX to create/reset data in the application.
