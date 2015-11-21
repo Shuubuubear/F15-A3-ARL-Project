@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="45E9A2C5-7C39-BBDE-457D-89AF622B9E6F" name="F15_A3_RFE_S">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="00E6D0D8-9975-AE8E-8B85-246A1982344B" name="F15_A3_RFE_SH">
 <createdBy>Nick</createdBy>
-<createdTime>2015-11-07 23:25:35 UTC</createdTime>
+<createdTime>2015-11-21 02:07:03 UTC</createdTime>
 <ownerDesignName>New Conceptual Model</ownerDesignName>
 <engineerTo>
 <item key="212072FE-8EF8-06E3-52C9-55E96A5B12C3" value="true"/>
@@ -15,11 +15,10 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="status_id" id="BE001A1F-2CAA-CD85-C179-48E7E6127FDE">
+<Attribute name="status_id" id="0093001A-D534-0467-9F81-0D8DCC492B64">
 <createdBy>Nick</createdBy>
-<createdTime>2015-11-07 23:25:35 UTC</createdTime>
+<createdTime>2015-11-21 02:07:23 UTC</createdTime>
 <ownerDesignName>New Conceptual Model</ownerDesignName>
-<importedID>DF9582DD-A66A-3D26-CEDF-431B1A383173</importedID>
 <engineerTo>
 <item key="212072FE-8EF8-06E3-52C9-55E96A5B12C3" value="true"/>
 </engineerTo>
@@ -28,12 +27,11 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="status_code" id="112381DE-45AF-254E-5D15-5D79CD359A04">
+<Attribute name="status_code" id="C75B512F-DC48-D358-264E-AC5A36795484">
 <createdBy>Nick</createdBy>
-<createdTime>2015-11-07 23:25:35 UTC</createdTime>
-<generatorID>62F80E4E-44D2-BE52-3CE9-9CBF4055DB0B</generatorID>
+<createdTime>2015-11-21 02:26:47 UTC</createdTime>
+<generatorID>F60BA27F-340D-E850-A196-BDAB589B53AE</generatorID>
 <ownerDesignName>New Conceptual Model</ownerDesignName>
-<importedID>780B040C-9742-6428-F735-B5B2AE0D79C6</importedID>
 <engineerTo>
 <item key="212072FE-8EF8-06E3-52C9-55E96A5B12C3" value="true"/>
 </engineerTo>
@@ -43,10 +41,10 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="rfe_id" id="D0834AD8-F751-95DE-859C-56F3227E9600">
+<Attribute name="rfe_id" id="5B1D85BE-603C-127F-AA13-1AA859A42AF5">
 <createdBy>Nick</createdBy>
-<createdTime>2015-11-21 02:30:47 UTC</createdTime>
-<generatorID>993F64D4-1FC4-D11A-107C-38C775E8A021</generatorID>
+<createdTime>2015-11-21 02:11:27 UTC</createdTime>
+<generatorID>FE1D7FF5-1825-9E70-0177-4BDFD93C28A0</generatorID>
 <ownerDesignName>New Conceptual Model</ownerDesignName>
 <engineerTo>
 <item key="212072FE-8EF8-06E3-52C9-55E96A5B12C3" value="true"/>
@@ -59,16 +57,16 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="C49CB144-FCAC-C1E4-D305-7BF389FDA21B" name="F15_A3_RFE_S PK">
+<identifier id="9444734A-78C6-411F-39AA-2DAEC4697440" name="F15_A3_RFE_SH PK">
 <createdBy>Nick</createdBy>
-<createdTime>2015-11-07 23:25:35 UTC</createdTime>
+<createdTime>2015-11-21 02:07:39 UTC</createdTime>
 <ownerDesignName>New Conceptual Model</ownerDesignName>
 <engineerTo>
 <item key="212072FE-8EF8-06E3-52C9-55E96A5B12C3" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>BE001A1F-2CAA-CD85-C179-48E7E6127FDE</attributeRef>
+<attributeRef>0093001A-D534-0467-9F81-0D8DCC492B64</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

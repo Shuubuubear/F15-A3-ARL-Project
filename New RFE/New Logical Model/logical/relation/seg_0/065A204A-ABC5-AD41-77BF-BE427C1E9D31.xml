@@ -11,7 +11,7 @@
 <dominantRole>05DA50D5-22FD-C8E3-433D-C5BF9E358C2E</dominantRole>
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>
-<optionalTarget>true</optionalTarget>
+<optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>05DA50D5-22FD-C8E3-433D-C5BF9E358C2E</sourceEntity>
 <targetCardinalityString>1</targetCardinalityString>

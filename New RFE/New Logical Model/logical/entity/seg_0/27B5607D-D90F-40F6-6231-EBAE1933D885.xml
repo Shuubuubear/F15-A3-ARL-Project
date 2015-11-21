@@ -28,22 +28,6 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="status_id" id="63663180-2932-891A-C222-894DF0C8FC49">
-<createdBy>Nick</createdBy>
-<createdTime>2015-11-08 00:30:03 UTC</createdTime>
-<generatorID>DF4CA9C9-CDAD-705D-F5A7-728C0D80145B</generatorID>
-<ownerDesignName>New Logical Model</ownerDesignName>
-<importedID>0DCE7DF7-CB74-2289-F91E-1A1E469FF8BC</importedID>
-<engineerTo>
-<item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>42C71A8B-92DE-1125-E604-E8DE5938AC05</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="explanation" id="D1526A60-3090-5793-625E-2BBCBF97EE90">
 <createdBy>Nick</createdBy>
 <createdTime>2015-11-08 00:30:03 UTC</createdTime>
@@ -92,7 +76,6 @@
 <createdBy>Nick</createdBy>
 <createdTime>2015-11-08 00:30:03 UTC</createdTime>
 <ownerDesignName>New Logical Model</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
 <item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="false"/>
 </engineerTo>

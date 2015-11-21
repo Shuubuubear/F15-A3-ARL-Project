@@ -43,21 +43,6 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="status_id" id="0DCE7DF7-CB74-2289-F91E-1A1E469FF8BC">
-<createdBy>Nick</createdBy>
-<createdTime>2015-11-07 23:56:13 UTC</createdTime>
-<generatorID>993F64D4-1FC4-D11A-107C-38C775E8A021</generatorID>
-<ownerDesignName>New Conceptual Model</ownerDesignName>
-<engineerTo>
-<item key="212072FE-8EF8-06E3-52C9-55E96A5B12C3" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>BE001A1F-2CAA-CD85-C179-48E7E6127FDE</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="explanation" id="4F8FB740-4204-0752-22A0-1F876DE63344">
 <createdBy>Nick</createdBy>
 <createdTime>2015-11-07 23:25:35 UTC</createdTime>

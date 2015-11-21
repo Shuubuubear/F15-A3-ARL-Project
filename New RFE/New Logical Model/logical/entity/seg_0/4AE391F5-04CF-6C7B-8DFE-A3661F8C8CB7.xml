@@ -62,7 +62,6 @@
 <createdBy>Nick</createdBy>
 <createdTime>2015-11-08 00:30:03 UTC</createdTime>
 <ownerDesignName>New Logical Model</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
 <item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="false"/>
 </engineerTo>

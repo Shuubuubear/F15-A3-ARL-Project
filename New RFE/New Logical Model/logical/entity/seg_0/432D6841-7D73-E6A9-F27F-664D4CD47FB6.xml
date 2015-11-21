@@ -65,7 +65,6 @@
 <engineerTo>
 <item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <referedAttribute>519BC064-30E5-5239-099B-AF5A6AB5108C</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -104,7 +103,6 @@
 <createdBy>Nick</createdBy>
 <createdTime>2015-11-08 00:50:26 UTC</createdTime>
 <ownerDesignName>New Logical Model</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
 <item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="false"/>
 </engineerTo>
