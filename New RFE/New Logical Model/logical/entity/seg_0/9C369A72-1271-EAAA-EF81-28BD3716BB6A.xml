@@ -43,14 +43,15 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="rfe_id" id="5190F0F7-6208-358D-067F-188FB2C7D606">
+<Attribute name="rfe_id" id="7FCD2AE0-0924-7E7C-DF70-9577F169DB96">
 <createdBy>Nick</createdBy>
-<createdTime>2015-11-21 02:58:33 UTC</createdTime>
+<createdTime>2015-11-21 03:54:05 UTC</createdTime>
 <generatorID>DF4CA9C9-CDAD-705D-F5A7-728C0D80145B</generatorID>
 <ownerDesignName>New Logical Model</ownerDesignName>
 <engineerTo>
 <item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <referedAttribute>B09C5FC0-24ED-E061-4FA5-A8F38A14D605</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -63,6 +64,7 @@
 <createdBy>Nick</createdBy>
 <createdTime>2015-11-08 00:30:03 UTC</createdTime>
 <ownerDesignName>New Logical Model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
 <item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="false"/>
 </engineerTo>

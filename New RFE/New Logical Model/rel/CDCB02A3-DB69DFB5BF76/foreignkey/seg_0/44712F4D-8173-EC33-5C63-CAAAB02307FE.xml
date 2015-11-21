@@ -8,7 +8,7 @@
 <referredTableID>202211A3-1DA9-AFEA-DEEE-99057E68150E</referredTableID>
 <keyObject>6391AF25-4D65-6667-ECA0-02610A6BF880</keyObject>
 <referredKeyID>6391AF25-4D65-6667-ECA0-02610A6BF880</referredKeyID>
-<mandatory>true</mandatory>
+<mandatory>false</mandatory>
 <transferable>true</transferable>
 <rely>false</rely>
 <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>

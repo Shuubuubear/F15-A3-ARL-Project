@@ -39,6 +39,7 @@
 <createdTime>2015-11-21 03:16:12 UTC</createdTime>
 <generatorID>5190F0F7-6208-358D-067F-188FB2C7D606</generatorID>
 <ownerDesignName>New Logical Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -48,6 +49,19 @@
 <associations>
 <colAssociation fkAssociation="44712F4D-8173-EC33-5C63-CAAAB02307FE" referredColumn="42B0A831-DD25-E131-28AE-483B729E453B"/>
 </associations>
+</Column>
+<Column name="rfe_id" id="E9C4B999-C496-7015-663E-80646A56340E">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-21 04:06:11 UTC</createdTime>
+<generatorID>7FCD2AE0-0924-7E7C-DF70-9577F169DB96</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
