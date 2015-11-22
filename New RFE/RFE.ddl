@@ -44,18 +44,6 @@ CREATE UNIQUE INDEX F15_A3_Auth__IDX ON F15_A3_Auth
 ALTER TABLE F15_A3_Auth ADD CONSTRAINT F15_A3_Auth_PK PRIMARY KEY ( auth_id ) ;
 
 
-CREATE TABLE F15_A3_Contact
-  (
-    contact_id             INTEGER NOT NULL ,
-    F15_A3_Emp_employee_id INTEGER ,
-    F15_A3_RFE_rfe_id      INTEGER ,
-    F15_A3_RTC_role_code   INTEGER NOT NULL ,
-    effective_date         DATE NOT NULL ,
-    comments               VARCHAR2 (4000)
-  ) ;
-ALTER TABLE F15_A3_Contact ADD CONSTRAINT F15_A3_Contact_PK PRIMARY KEY ( contact_id ) ;
-
-
 CREATE TABLE F15_A3_Emp
   (
     employee_id        INTEGER NOT NULL ,
@@ -97,6 +85,22 @@ CREATE UNIQUE INDEX F15_A3_RFE__IDX ON F15_A3_RFE
   ;
 ALTER TABLE F15_A3_RFE ADD CONSTRAINT F15_A3_RFE_PK PRIMARY KEY ( rfe_id ) ;
 
+CREATE TABLE F15_A3_Contact
+  (
+    contact_id             INTEGER NOT NULL ,
+    F15_A3_Emp_employee_id INTEGER ,
+    F15_A3_RFE_rfe_id      INTEGER ,
+    F15_A3_RTC_role_code   INTEGER NOT NULL ,
+    effective_date         DATE NOT NULL ,
+    comments               VARCHAR2 (4000)
+  ) ;
+ALTER TABLE F15_A3_Contact ADD CONSTRAINT F15_A3_Contact_PK PRIMARY KEY ( contact_id ) ;
+ALTER TABLE F15_A3_Contact
+  ADD CONSTRAINT contact_rfe_delete
+  FOREIGN KEY (F15_A3_RFE_rfe_id)
+  REFERENCES F15_A3_RFE (rfe_id)
+  ON DELETE CASCADE;
+
 
 CREATE TABLE F15_A3_RFE_Doc
   (
@@ -110,6 +114,11 @@ CREATE TABLE F15_A3_RFE_Doc
     tags          VARCHAR2 (4000)
   ) ;
 ALTER TABLE F15_A3_RFE_Doc ADD CONSTRAINT F15_A3_RFE_Doc_PK PRIMARY KEY ( document_id ) ;
+ALTER TABLE F15_A3_RFE_Doc
+  ADD CONSTRAINT doc_rfe_delete
+  FOREIGN KEY (F15_A3_RFE_rfe_id)
+  REFERENCES F15_A3_RFE (rfe_id)
+  ON DELETE CASCADE;
 
 
 CREATE TABLE F15_A3_RFE_S
@@ -125,6 +134,11 @@ CREATE UNIQUE INDEX F15_A3_RFE_S__IDX ON F15_A3_RFE_S
   )
   ;
 ALTER TABLE F15_A3_RFE_S ADD CONSTRAINT F15_A3_RFE_S_PK PRIMARY KEY ( status_id ) ;
+ALTER TABLE F15_A3_RFE_S
+  ADD CONSTRAINT status_rfe_delete
+  FOREIGN KEY (F15_A3_RFE_rfe_id)
+  REFERENCES F15_A3_RFE (rfe_id)
+  ON DELETE CASCADE;
 
 
 CREATE TABLE F15_A3_RFE_SC
@@ -143,6 +157,11 @@ CREATE TABLE F15_A3_RFE_SH
     F15_A3_RFE_rfe_id         INTEGER NOT NULL
   ) ;
 ALTER TABLE F15_A3_RFE_SH ADD CONSTRAINT F15_A3_RFE_SH_PK PRIMARY KEY ( status_id ) ;
+ALTER TABLE F15_A3_RFE_SH
+  ADD CONSTRAINT status_history_rfe_delete
+  FOREIGN KEY (F15_A3_RFE_rfe_id)
+  REFERENCES F15_A3_RFE (rfe_id)
+  ON DELETE CASCADE;
 
 
 CREATE TABLE F15_A3_RFE_TC
@@ -153,6 +172,11 @@ CREATE TABLE F15_A3_RFE_TC
     comments               VARCHAR2 (4000) NOT NULL
   ) ;
 ALTER TABLE F15_A3_RFE_TC ADD CONSTRAINT F15_A3_RFE_TC_PK PRIMARY KEY ( comment_id ) ;
+ALTER TABLE F15_A3_RFE_TC
+  ADD CONSTRAINT tc_rfe_delete
+  FOREIGN KEY (F15_A3_RFE_rfe_id)
+  REFERENCES F15_A3_RFE (rfe_id)
+  ON DELETE CASCADE;
 
 
 CREATE TABLE F15_A3_RFE_Task
@@ -164,6 +188,12 @@ CREATE TABLE F15_A3_RFE_Task
     task_description  VARCHAR2 (4000) NOT NULL
   ) ;
 ALTER TABLE F15_A3_RFE_Task ADD CONSTRAINT F15_A3_RFE_Task_PK PRIMARY KEY ( task_id ) ;
+ALTER TABLE F15_A3_RFE_Task
+  ADD CONSTRAINT task_rfe_delete
+  FOREIGN KEY (F15_A3_RFE_rfe_id)
+  REFERENCES F15_A3_RFE (rfe_id)
+  ON DELETE CASCADE;
+
 
 
 CREATE TABLE F15_A3_RTC
@@ -204,8 +234,8 @@ ALTER TABLE F15_A3_RFE_TC ADD CONSTRAINT F15_A3_RFE_TC_F15_A3_RFE_FK FOREIGN KEY
 ALTER TABLE F15_A3_RFE_Task ADD CONSTRAINT F15_A3_RFE_Task_F15_A3_RFE_FK FOREIGN KEY ( F15_A3_RFE_rfe_id ) REFERENCES F15_A3_RFE ( rfe_id ) ;
 
 
--- Oracle SQL Developer Data Modeler Summary Report: 
--- 
+-- Oracle SQL Developer Data Modeler Summary Report:
+--
 -- CREATE TABLE                            12
 -- CREATE INDEX                             3
 -- ALTER TABLE                             26
@@ -233,15 +263,15 @@ ALTER TABLE F15_A3_RFE_Task ADD CONSTRAINT F15_A3_RFE_Task_F15_A3_RFE_FK FOREIGN
 -- CREATE SYNONYM                           0
 -- CREATE TABLESPACE                        0
 -- CREATE USER                              0
--- 
+--
 -- DROP TABLESPACE                          0
 -- DROP DATABASE                            0
--- 
+--
 -- REDACTION POLICY                         0
--- 
+--
 -- ORDS DROP SCHEMA                         0
 -- ORDS ENABLE SCHEMA                       0
 -- ORDS ENABLE OBJECT                       0
--- 
+--
 -- ERRORS                                   0
 -- WARNINGS                                 0

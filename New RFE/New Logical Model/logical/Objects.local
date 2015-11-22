@@ -22,7 +22,7 @@
    <object objectType="Relation" objectID="FB8593FE-5E7D-7A76-B975-A44367308A9F" name="Relation_2" seqName="seg_0"/>
    <object objectType="Relation" objectID="D27ADCA4-7E64-BD93-005A-0DA5FAAB8088" name="Relation_20" seqName="seg_0"/>
    <object objectType="Relation" objectID="D6947108-4655-2DDD-04BB-2490C19AB0E0" name="Relation_21" seqName="seg_0"/>
-   <object objectType="Relation" objectID="EBB7775F-D1C6-20E1-D69D-537A26233361" name="Relation_23" seqName="seg_0"/>
    <object objectType="Relation" objectID="9012167B-9432-98C9-BA00-5B6DA3756087" name="Relation_25" seqName="seg_0"/>
+   <object objectType="Relation" objectID="3901CBC0-3FBD-C5F1-0ECB-88F5F462E5A8" name="Relation_26" seqName="seg_0"/>
    <object objectType="Relation" objectID="065A204A-ABC5-AD41-77BF-BE427C1E9D31" name="Relation_27" seqName="seg_0"/>
 </oracle.dbtools.crest.model.design.logical.LogicalDesign>
