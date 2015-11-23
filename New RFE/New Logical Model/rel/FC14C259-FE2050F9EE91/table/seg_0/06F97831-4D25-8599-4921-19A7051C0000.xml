@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="06F97831-4D25-8599-4921-19A7051C0000" name="F15_A3_RFE_SH">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-23 19:16:32 UTC</createdTime>
+<generatorID>406FA10D-D817-986A-D2C8-52BC13E06F46</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="status_id" id="A2024C05-2FAC-83BD-9B12-75ADFA4E8263">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-23 19:16:32 UTC</createdTime>
+<generatorID>F3ACF7B6-3B0B-28B0-17E6-63067B89B81D</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15_A3_RFE_SC_status_code" id="E6C47097-155B-152A-D3E4-2D71F94A51B2">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-23 19:16:32 UTC</createdTime>
+<generatorID>61982C4D-301D-E7E0-A1A8-07FC4ED26554</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E9A5318F-0919-EAE6-9CAC-0F93D6548351" referredColumn="4A78CFB7-9281-2D99-DEB4-78CC5D218EA9"/>
+</associations>
+</Column>
+<Column name="F15_A3_RFE_rfe_id" id="81C404B4-E851-061D-01C0-00DF1EB08766">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-23 19:16:32 UTC</createdTime>
+<generatorID>64889D7F-8B1F-3E89-C89C-C6DDD0C888A1</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="328F4A6D-2A7F-B263-6E44-9C6AFC79BD90" referredColumn="DD6B55D3-7AD2-B823-18AD-4DC01204BD5C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DF19C752-365B-FE2D-DD9A-4C5091A658D6" name="F15_A3_RFE_SH_PK">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-23 19:16:32 UTC</createdTime>
+<generatorID>9F000BD8-2005-9A32-8CCC-58140378FB19</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2024C05-2FAC-83BD-9B12-75ADFA4E8263"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="42F472B3-86E1-F57F-A5D5-E08479A8C373" name="F15_A3_RFE_SH_F15_A3_RFE_SC_FK">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-23 19:16:32 UTC</createdTime>
+<generatorID>9012167B-9432-98C9-BA00-5B6DA3756087</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6C47097-155B-152A-D3E4-2D71F94A51B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0D2CFE1E-A03E-7D2E-B190-D745DC032CFC" name="F15_A3_RFE_SH_F15_A3_RFE_FK">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-23 19:16:32 UTC</createdTime>
+<generatorID>3901CBC0-3FBD-C5F1-0ECB-88F5F462E5A8</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81C404B4-E851-061D-01C0-00DF1EB08766"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

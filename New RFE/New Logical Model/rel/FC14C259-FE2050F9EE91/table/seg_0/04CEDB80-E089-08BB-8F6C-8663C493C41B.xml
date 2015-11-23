@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="04CEDB80-E089-08BB-8F6C-8663C493C41B" name="F15_A3_RFE">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-23 19:16:32 UTC</createdTime>
+<generatorID>27B5607D-D90F-40F6-6231-EBAE1933D885</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rfe_id" id="DD6B55D3-7AD2-B823-18AD-4DC01204BD5C">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-23 19:16:32 UTC</createdTime>
+<generatorID>B09C5FC0-24ED-E061-4FA5-A8F38A14D605</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="explanation" id="5BBA9B15-7F56-2F68-7880-083A6868400E">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-23 19:16:32 UTC</createdTime>
+<generatorID>D1526A60-3090-5793-625E-2BBCBF97EE90</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="alt_protections" id="FAC4A95A-11A2-692E-6AD9-DBE7E14077BE">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-23 19:16:32 UTC</createdTime>
+<generatorID>A7D4FF05-3D14-2EAC-A366-858B163A4BC3</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="approval_review_date" id="688219A7-2321-0D56-CF5C-11705672AE31">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-23 19:16:32 UTC</createdTime>
+<generatorID>0488EF65-EE49-A057-F06A-2D08E8A080D5</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F99B570C-87B7-AC55-04C0-A5B48CF38146" name="F15_A3_RFE_PK">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-23 19:16:32 UTC</createdTime>
+<generatorID>78EBD3D0-830D-35E1-79B5-4D114AA01457</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD6B55D3-7AD2-B823-18AD-4DC01204BD5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
