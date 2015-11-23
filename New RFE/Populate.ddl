@@ -1,5 +1,3 @@
--- Employee entries
-
 ALTER TABLE F15_A3_Auth DISABLE CONSTRAINT F15_A3_Auth_F15_A3_Emp_FK;
 
 ALTER TABLE F15_A3_Contact DISABLE CONSTRAINT F15_A3_Contact_F15_A3_Emp_FK;
@@ -28,17 +26,104 @@ ALTER TABLE F15_A3_RFE_TC DISABLE CONSTRAINT F15_A3_RFE_TC_F15_A3_RFE_FK;
 
 ALTER TABLE F15_A3_RFE_Task DISABLE CONSTRAINT F15_A3_RFE_Task_F15_A3_RFE_FK;
 
-ALTER TABLE F15_A3_Contact DISABLE CONSTRAINT contact_rfe_delete;
+ALTER TABLE F15_A3_Contact DISABLE CONSTRAINT F15_A3_contact_rfe_delete;
 
-ALTER TABLE F15_A3_RFE_Doc DISABLE CONSTRAINT doc_rfe_delete;
+ALTER TABLE F15_A3_RFE_Doc DISABLE CONSTRAINT F15_A3_doc_rfe_delete;
 
-ALTER TABLE F15_A3_RFE_S DISABLE CONSTRAINT rfe_s_delete;
+ALTER TABLE F15_A3_RFE_S DISABLE CONSTRAINT F15_A3_rfe_s_delete;
 
-ALTER TABLE F15_A3_RFE_TC DISABLE CONSTRAINT tc_rfe_delete;
+ALTER TABLE F15_A3_RFE_TC DISABLE CONSTRAINT F15_A3_tc_rfe_delete;
 
-ALTER TABLE F15_A3_RFE_SH DISABLE CONSTRAINT status_history_rfe_delete;
+ALTER TABLE F15_A3_RFE_SH DISABLE CONSTRAINT F15_A3_sh_rfe_delete;
 
-ALTER TABLE F15_A3_RFE_TASK DISABLE CONSTRAINT task_rfe_delete;
+ALTER TABLE F15_A3_RFE_TASK DISABLE CONSTRAINT F15_A3_task_rfe_delete;
+
+--start sequences at 1
+
+DROP SEQUENCE F15_A3_Auth_seq ; 
+create sequence F15_A3_Auth_seq 
+start with 1 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15_A3_Contact_seq ; 
+create sequence F15_A3_Contact_seq 
+start with 1 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15_A3_Emp_seq ; 
+create sequence F15_A3_Emp_seq 
+start with 1 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15_A3_Lab_seq ; 
+create sequence F15_A3_Lab_seq 
+start with 1 
+increment by 1 
+nomaxvalue 
+;
+DROP SEQUENCE F15_A3_RFE_seq ; 
+create sequence F15_A3_RFE_seq 
+start with 1 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15_A3_RFE_Doc_seq ; 
+create sequence F15_A3_RFE_Doc_seq 
+start with 1 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15_A3_RFE_S_seq ; 
+create sequence F15_A3_RFE_S_seq 
+start with 1 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15_A3_RFE_SC_seq ; 
+create sequence F15_A3_RFE_SC_seq 
+start with 1 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15_A3_RFE_SH_seq ; 
+create sequence F15_A3_RFE_SH_seq 
+start with 1 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15_A3_RFE_TC_seq ; 
+create sequence F15_A3_RFE_TC_seq 
+start with 1 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15_A3_RFE_Task_seq ; 
+create sequence F15_A3_RFE_Task_seq 
+start with 1 
+increment by 1 
+nomaxvalue 
+;
+/
+
+DROP SEQUENCE F15_A3_RTC_seq ; 
+create sequence F15_A3_RTC_seq 
+start with 1 
+increment by 1 
+nomaxvalue 
+;
+
 
 
 ALTER TRIGGER F15_A3_CONTACT_pk_trig disable;
@@ -97,17 +182,17 @@ ALTER TABLE F15_A3_RFE_TC ENABLE CONSTRAINT F15_A3_RFE_TC_F15_A3_RFE_FK;
 
 ALTER TABLE F15_A3_RFE_Task ENABLE CONSTRAINT F15_A3_RFE_Task_F15_A3_RFE_FK;
 
-ALTER TABLE F15_A3_Contact ENABLE CONSTRAINT contact_rfe_delete;
+ALTER TABLE F15_A3_Contact ENABLE CONSTRAINT F15_A3_contact_rfe_delete;
 
-ALTER TABLE F15_A3_RFE_Doc ENABLE CONSTRAINT doc_rfe_delete;
+ALTER TABLE F15_A3_RFE_Doc ENABLE CONSTRAINT F15_A3_doc_rfe_delete;
 
-ALTER TABLE F15_A3_RFE_S ENABLE CONSTRAINT rfe_s_delete;
+ALTER TABLE F15_A3_RFE_S ENABLE CONSTRAINT F15_A3_rfe_s_delete;
 
-ALTER TABLE F15_A3_RFE_TC ENABLE CONSTRAINT tc_rfe_delete;
+ALTER TABLE F15_A3_RFE_TC ENABLE CONSTRAINT F15_A3_tc_rfe_delete;
 
-ALTER TABLE F15_A3_RFE_SH ENABLE CONSTRAINT status_history_rfe_delete;
+ALTER TABLE F15_A3_RFE_SH ENABLE CONSTRAINT F15_A3_sh_rfe_delete;
 
-ALTER TABLE F15_A3_RFE_TASK ENABLE CONSTRAINT task_rfe_delete;
+ALTER TABLE F15_A3_RFE_TASK ENABLE CONSTRAINT F15_A3_task_rfe_delete;
 
 
 
@@ -124,89 +209,91 @@ ALTER TRIGGER F15_A3_RFE_pk_trig ENABLE;
 ALTER TRIGGER F15_A3_RFE_SC_pk_trig ENABLE;
 
 
+--Employees
+
 insert into F15_A3_Lab(lab_id, lab_name) values (1, 'ADMN');
 insert into F15_A3_Lab(lab_id, lab_name) values (2, 'ITSS');
 insert into F15_A3_Lab(lab_id, lab_name) values (3, 'BOBO');
 
 insert into F15_A3_Emp(employee_id, F15_A3_LAB_LAB_ID, employee_name,
  	 employee_email, employee_office, employee_phone, employee_status,
- 	status_eff_date, system_admin_flag, lab_director_flag, exec_director_flag,
- 	chairperson_flag)
-	values (F15_A3_EMP_seq.nextval, (select lab_id from F15_A3_Lab where lab_name = 'ADMN') , 'Jon Smith',
-		'adminssharethesame@email.com', 'A001', '512-555-1233',
-		'A', TO_DATE('25-FEB-14','DD-MON-RR'),
+ 	status_eff_date, system_admin_flag, lab_director_flag, exec_director_flag, 
+ 	chairperson_flag) 
+	values (F15_A3_EMP_seq.nextval, (select lab_id from F15_A3_Lab where lab_name = 'ADMN') , 'Jon Smith', 
+		'adminssharethesame@email.com', 'A001', '512-555-1233', 
+		'A', TO_DATE('25-FEB-14','DD-MON-RR'), 
 		'N', 'N', 'N', 'Y');
 
 	insert into F15_A3_Emp(employee_id, F15_A3_LAB_LAB_ID, employee_name,
  	employee_email, employee_office, employee_phone, employee_status,
- 	status_eff_date, system_admin_flag, lab_director_flag, exec_director_flag,
- 	chairperson_flag)
-	values (F15_A3_EMP_seq.nextval, (select lab_id from F15_A3_Lab where lab_name = 'ADMN') , 'Johnny Smith',
-		'adminssharethesame@email.com', 'A002', '512-555-1333',
-		'A', TO_DATE('25-FEB-14','DD-MON-RR'),
+ 	status_eff_date, system_admin_flag, lab_director_flag, exec_director_flag, 
+ 	chairperson_flag) 
+	values (F15_A3_EMP_seq.nextval, (select lab_id from F15_A3_Lab where lab_name = 'ADMN') , 'Johnny Smith', 
+		'adminssharethesame@email.com', 'A002', '512-555-1333', 
+		'A', TO_DATE('25-FEB-14','DD-MON-RR'), 
 		'N', 'N', 'Y', 'N');
 
 	insert into F15_A3_Emp(employee_id, F15_A3_LAB_LAB_ID, employee_name,
  	employee_email, employee_office, employee_phone, employee_status,
- 	status_eff_date, system_admin_flag, lab_director_flag, exec_director_flag,
- 	chairperson_flag)
-	values (F15_A3_EMP_seq.nextval,(select lab_id from F15_A3_Lab where lab_name = 'ADMN') , 'Ol Jonathan Smith',
-		'adminssharethesame@email.com', 'A002', '512-555-1333',
-		'I', TO_DATE('25-FEB-14','DD-MON-RR'),
+ 	status_eff_date, system_admin_flag, lab_director_flag, exec_director_flag, 
+ 	chairperson_flag) 
+	values (F15_A3_EMP_seq.nextval,(select lab_id from F15_A3_Lab where lab_name = 'ADMN') , 'Ol Jonathan Smith', 
+		'adminssharethesame@email.com', 'A002', '512-555-1333', 
+		'I', TO_DATE('25-FEB-14','DD-MON-RR'), 
 		'N', 'N', 'Y', 'N');
-
+	
 	insert into F15_A3_Emp(employee_id, F15_A3_LAB_LAB_ID, employee_name,
  	employee_email, employee_office, employee_phone, employee_status,
- 	status_eff_date, system_admin_flag, lab_director_flag, exec_director_flag,
- 	chairperson_flag)
-	values (F15_A3_EMP_seq.nextval, (select lab_id from F15_A3_Lab where lab_name = 'ITSS') , 'The guy',
-		'weallsharethesame@email.com', 'B001', '512-555-1253',
-		'A', TO_DATE('25-FEB-14','DD-MON-RR'),
+ 	status_eff_date, system_admin_flag, lab_director_flag, exec_director_flag, 
+ 	chairperson_flag) 
+	values (F15_A3_EMP_seq.nextval, (select lab_id from F15_A3_Lab where lab_name = 'ITSS') , 'The guy', 
+		'weallsharethesame@email.com', 'B001', '512-555-1253', 
+		'A', TO_DATE('25-FEB-14','DD-MON-RR'), 
 		'N', 'N', 'N', 'N');
-
+	
 	insert into F15_A3_Emp(employee_id, F15_A3_LAB_LAB_ID, employee_name,
  	employee_email, employee_office, employee_phone, employee_status,
- 	status_eff_date, system_admin_flag, lab_director_flag, exec_director_flag,
- 	chairperson_flag)
-	values (F15_A3_EMP_seq.nextval, (select lab_id from F15_A3_Lab where lab_name = 'ITSS') , 'The other guy',
-		'weallsharethesame@email.com', 'B002', '512-555-1553',
-		'A', TO_DATE('25-FEB-14','DD-MON-RR'),
+ 	status_eff_date, system_admin_flag, lab_director_flag, exec_director_flag, 
+ 	chairperson_flag) 
+	values (F15_A3_EMP_seq.nextval, (select lab_id from F15_A3_Lab where lab_name = 'ITSS') , 'The other guy', 
+		'weallsharethesame@email.com', 'B002', '512-555-1553', 
+		'A', TO_DATE('25-FEB-14','DD-MON-RR'), 
 		'Y', 'N', 'N', 'N');
 
         insert into F15_A3_Emp(employee_id, F15_A3_LAB_LAB_ID, employee_name,
  	employee_email, employee_office, employee_phone, employee_status,
- 	status_eff_date, system_admin_flag, lab_director_flag, exec_director_flag,
- 	chairperson_flag)
-	values (F15_A3_EMP_seq.nextval, (select lab_id from F15_A3_Lab where lab_name = 'ITSS') , 'The dude',
-		'weallsharethesame@email.com', 'B002', '512-555-1553',
-		'A', TO_DATE('25-FEB-14','DD-MON-RR'),
+ 	status_eff_date, system_admin_flag, lab_director_flag, exec_director_flag, 
+ 	chairperson_flag) 
+	values (F15_A3_EMP_seq.nextval, (select lab_id from F15_A3_Lab where lab_name = 'ITSS') , 'The dude', 
+		'weallsharethesame@email.com', 'B002', '512-555-1553', 
+		'A', TO_DATE('25-FEB-14','DD-MON-RR'), 
 		'N', 'Y', 'N', 'N');
-
+	
         insert into F15_A3_Emp(employee_id, F15_A3_LAB_LAB_ID, employee_name,
  	employee_email, employee_office, employee_phone, employee_status,
- 	status_eff_date, system_admin_flag, lab_director_flag, exec_director_flag,
- 	chairperson_flag)
-	values (F15_A3_EMP_seq.nextval, (select lab_id from F15_A3_Lab where lab_name = 'BOBO') , 'Jared Smith',
-		'weallsharethesame@email.com', 'B001', '512-555-1253',
-		'A', TO_DATE('25-FEB-14','DD-MON-RR'),
+ 	status_eff_date, system_admin_flag, lab_director_flag, exec_director_flag, 
+ 	chairperson_flag) 
+	values (F15_A3_EMP_seq.nextval, (select lab_id from F15_A3_Lab where lab_name = 'BOBO') , 'Jared Smith', 
+		'weallsharethesame@email.com', 'B001', '512-555-1253', 
+		'A', TO_DATE('25-FEB-14','DD-MON-RR'), 
 		'N', 'N', 'N', 'N');
-
+	
 	insert into F15_A3_Emp(employee_id, F15_A3_LAB_LAB_ID, employee_name,
  	employee_email, employee_office, employee_phone, employee_status,
- 	status_eff_date, system_admin_flag, lab_director_flag, exec_director_flag,
- 	chairperson_flag)
-	values (F15_A3_EMP_seq.nextval, (select lab_id from F15_A3_Lab where lab_name = 'BOBO') , 'Bobobo bobobobo',
-		'bobobobo@bobobo.com', 'B080', '512-555-1263',
-		'A', TO_DATE('25-FEB-14','DD-MON-RR'),
+ 	status_eff_date, system_admin_flag, lab_director_flag, exec_director_flag, 
+ 	chairperson_flag) 
+	values (F15_A3_EMP_seq.nextval, (select lab_id from F15_A3_Lab where lab_name = 'BOBO') , 'Bobobo bobobobo', 
+		'bobobobo@bobobo.com', 'B080', '512-555-1263', 
+		'A', TO_DATE('25-FEB-14','DD-MON-RR'), 
 		'Y', 'N', 'N', 'N');
-
+	
 	insert into F15_A3_Emp(employee_id, F15_A3_LAB_LAB_ID, employee_name,
  	employee_email, employee_office, employee_phone, employee_status,
- 	status_eff_date, system_admin_flag, lab_director_flag, exec_director_flag,
- 	chairperson_flag)
-	values (9, (select lab_id from F15_A3_Lab where lab_name = 'BOBO') , 'Bobo bobobo',
-		'bobobobobo@bobobo.com', 'B080', '512-555-2263',
-		'A', TO_DATE('25-FEB-14','DD-MON-RR'),
+ 	status_eff_date, system_admin_flag, lab_director_flag, exec_director_flag, 
+ 	chairperson_flag) 
+	values (9, (select lab_id from F15_A3_Lab where lab_name = 'BOBO') , 'Bobo bobobo', 
+		'bobobobobo@bobobo.com', 'B080', '512-555-2263', 
+		'A', TO_DATE('25-FEB-14','DD-MON-RR'), 
 		'N', 'Y', 'N', 'N');
 
 -- Status/RTC code entries
@@ -261,9 +348,9 @@ INSERT INTO F15_A3_RTC (Role_code, Role_type, Description)
 	VALUES(6, 'Exec Dir Approver', 'Final round approver for all RFE''s.');
 
 
--- RFE entries
+-- RFE entries                                                                                                                                                                                                                                                                                             
 
-INSERT INTO F15_A3_RFE(rfe_id,
+INSERT INTO F15_A3_RFE(rfe_id, 
 	EXPLANATION, ALT_PROTECTIONS, APPROVAL_REVIEW_DATE)
 VALUES(F15_A3_RFE_seq.nextval, 'I want to watch cat videos on youtube', 'ad block to protect from scary ads',
 	null);
@@ -306,17 +393,17 @@ WHERE F15_A3_RFE_RFE_ID = (select rfe_id from F15_A3_RFE where explanation = 'I 
 
 --Tasks
 
-INSERT INTO F15_A3_RFE_TASK(TASK_ID, F15_A3_RFE_RFE_ID,
+INSERT INTO F15_A3_RFE_TASK(TASK_ID, F15_A3_RFE_RFE_ID, 
 		EFFECTIVE_DATE, TASK_ABBREVIATION, TASK_DESCRIPTION)
 VALUES(F15_A3_RFE_TASK_seq.nextval, (select rfe_id from F15_A3_RFE where explanation = 'I want to watch cat videos on youtube'),
 TO_DATE('01-MAR-15', 'DD-MON-RR'), 'CATS', 'watching cat vids');
 
-INSERT INTO F15_A3_RFE_TASK(TASK_ID, F15_A3_RFE_RFE_ID,
+INSERT INTO F15_A3_RFE_TASK(TASK_ID, F15_A3_RFE_RFE_ID, 
 		EFFECTIVE_DATE, TASK_ABBREVIATION, TASK_DESCRIPTION)
 VALUES(F15_A3_RFE_TASK_seq.nextval, (select rfe_id from F15_A3_RFE where explanation = 'I want to look at cat gifs'),
 TO_DATE('01-MAR-15', 'DD-MON-RR'), 'GIFS', 'watching cat gifs');
 
-INSERT INTO F15_A3_RFE_TASK(TASK_ID, F15_A3_RFE_RFE_ID,
+INSERT INTO F15_A3_RFE_TASK(TASK_ID, F15_A3_RFE_RFE_ID, 
 		EFFECTIVE_DATE, TASK_ABBREVIATION, TASK_DESCRIPTION)
 VALUES(F15_A3_RFE_TASK_seq.nextval, (select rfe_id from F15_A3_RFE where explanation = 'I want to play solitaire for free'),
 TO_DATE('01-MAR-15', 'DD-MON-RR'), 'CARD', 'playing card games');
@@ -324,24 +411,24 @@ TO_DATE('01-MAR-15', 'DD-MON-RR'), 'CARD', 'playing card games');
 
 --Tracking comments
 
-INSERT INTO F15_A3_RFE_TC(COMMENT_ID, F15_A3_RFE_RFE_ID, COMMENTS,
-	F15_A3_EMP_EMPLOYEE_ID)
+INSERT INTO F15_A3_RFE_TC(COMMENT_ID, F15_A3_RFE_RFE_ID, COMMENTS, 
+	F15_A3_EMP_EMPLOYEE_ID) 
 VALUES (F15_A3_RFE_TC_seq.nextval, (select rfe_id from F15_A3_RFE where explanation = 'I want to watch cat videos on youtube'),
 	'Cat videos are great but are not cat gifs just as great if not more',
 	(select employee_id from F15_A3_EMP where employee_name = 'Jon Smith'));
 
-INSERT INTO F15_A3_RFE_TC(COMMENT_ID, F15_A3_RFE_RFE_ID,  COMMENTS,
-	F15_A3_EMP_EMPLOYEE_ID)
+INSERT INTO F15_A3_RFE_TC(COMMENT_ID, F15_A3_RFE_RFE_ID,  COMMENTS, 
+	F15_A3_EMP_EMPLOYEE_ID) 
 VALUES (F15_A3_RFE_TC_seq.nextval, (select rfe_id from F15_A3_RFE where explanation = 'I want to play solitaire for free'),
 	 'dont just dont',
 	(select employee_id from F15_A3_EMP where employee_name = 'The guy'));
 
-INSERT INTO F15_A3_RFE_TC(COMMENT_ID, F15_A3_RFE_RFE_ID, COMMENTS,
-	F15_A3_EMP_EMPLOYEE_ID)
+INSERT INTO F15_A3_RFE_TC(COMMENT_ID, F15_A3_RFE_RFE_ID, COMMENTS, 
+	F15_A3_EMP_EMPLOYEE_ID) 
 VALUES (F15_A3_RFE_TC_seq.nextval, (select rfe_id from F15_A3_RFE where explanation = 'I want to watch cat videos on youtube'),
         'Yeah theyre great and all but cat gifs dont have sound',
 	(select employee_id from F15_A3_EMP where employee_name = 'Johnny Smith'));
-
+    
 -- Contact entries
 
 INSERT INTO F15_A3_CONTACT(contact_id, F15_A3_Emp_employee_id, F15_A3_RFE_RFE_ID,
@@ -386,3 +473,89 @@ INSERT INTO F15_A3_AUTH(auth_id, F15_A3_EMP_employee_id, right)
 
 INSERT INTO F15_A3_AUTH(auth_id, F15_A3_EMP_employee_id, right)
     VALUES(F15_A3_AUTH_seq.nextval, (SELECT employee_id FROM F15_A3_EMP WHERE employee_name = 'Bobo bobobo'), 'write');
+
+--return sequences to normal
+
+DROP SEQUENCE F15_A3_Auth_seq ; 
+create sequence F15_A3_Auth_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15_A3_Contact_seq ; 
+create sequence F15_A3_Contact_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15_A3_Emp_seq ; 
+create sequence F15_A3_Emp_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15_A3_Lab_seq ; 
+create sequence F15_A3_Lab_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP SEQUENCE F15_A3_RFE_seq ; 
+create sequence F15_A3_RFE_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15_A3_RFE_Doc_seq ; 
+create sequence F15_A3_RFE_Doc_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15_A3_RFE_S_seq ; 
+create sequence F15_A3_RFE_S_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15_A3_RFE_SC_seq ; 
+create sequence F15_A3_RFE_SC_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15_A3_RFE_SH_seq ; 
+create sequence F15_A3_RFE_SH_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15_A3_RFE_TC_seq ; 
+create sequence F15_A3_RFE_TC_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+DROP SEQUENCE F15_A3_RFE_Task_seq ; 
+create sequence F15_A3_RFE_Task_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+/
+
+DROP SEQUENCE F15_A3_RTC_seq ; 
+create sequence F15_A3_RTC_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;

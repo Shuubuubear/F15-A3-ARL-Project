@@ -5,7 +5,7 @@ drop view F15_A3_Exec_Director_view;
 drop view F15_A3_Chairperson_view;
 
 create view F15_A3_Lab_Employee_view as
-SELECT
+SELECT 
     employee_id,
     employee_name,
     F15_A3_LAB_LAB_ID,
@@ -27,7 +27,7 @@ create or replace TRIGGER F15_A3_Lab_Employee_trigger
      INSTEAD OF insert ON F15_A3_Lab_Employee_view
      FOR EACH ROW
 BEGIN
-    insert into F15_A3_Emp(
+    insert into F15_A3_Emp( 
 		employee_id,
 	    employee_name,
         F15_A3_LAB_LAB_ID,
@@ -40,7 +40,7 @@ BEGIN
 	    lab_director_flag,
 	    exec_director_flag,
 	    chairperson_flag)
-		 VALUES (
+		 VALUES ( 
 		:NEW.employee_id,
 	    :NEW.employee_name,
 	    :NEW.F15_A3_LAB_LAB_ID,
@@ -57,7 +57,7 @@ END;
 /
 
 create view F15_A3_Lab_Director_view as
-SELECT
+SELECT 
     employee_id,
     employee_name,
     F15_A3_LAB_LAB_ID,
@@ -76,7 +76,7 @@ create or replace TRIGGER F15_A3_Lab_Director_trigger
      INSTEAD OF insert ON F15_A3_Lab_Director_view
      FOR EACH ROW
 BEGIN
-    insert into F15_A3_Emp(
+    insert into F15_A3_Emp( 
 		employee_id,
 	    employee_name,
         F15_A3_LAB_LAB_ID,
@@ -89,7 +89,7 @@ BEGIN
 	    lab_director_flag,
 	    exec_director_flag,
 	    chairperson_flag)
-		 VALUES (
+		 VALUES ( 
 		:NEW.employee_id,
 	    :NEW.employee_name,
 	    :NEW.F15_A3_LAB_LAB_ID,
@@ -106,7 +106,7 @@ END;
 /
 
 create view F15_A3_Lab_Sys_Admin_view as
-SELECT
+SELECT 
     employee_id,
     employee_name,
     F15_A3_LAB_LAB_ID,
@@ -125,7 +125,7 @@ create or replace TRIGGER F15_A3_Lab_Sys_Admin_trigger
      INSTEAD OF insert ON F15_A3_Lab_Sys_Admin_view
      FOR EACH ROW
 BEGIN
-    insert into F15_A3_Emp(
+    insert into F15_A3_Emp( 
 		employee_id,
 	    employee_name,
         F15_A3_LAB_LAB_ID,
@@ -138,7 +138,7 @@ BEGIN
 	    lab_director_flag,
 	    exec_director_flag,
 	    chairperson_flag)
-		 VALUES (
+		 VALUES ( 
 		:NEW.employee_id,
 	    :NEW.employee_name,
 	    :NEW.F15_A3_LAB_LAB_ID,
@@ -155,7 +155,7 @@ END;
 /
 
 create view F15_A3_Exec_Director_view as
-SELECT
+SELECT 
     employee_id,
     employee_name,
     F15_A3_LAB_LAB_ID,
@@ -174,7 +174,7 @@ create or replace TRIGGER F15_A3_Exec_Director_trigger
      INSTEAD OF insert ON F15_A3_Exec_Director_view
      FOR EACH ROW
 BEGIN
-    insert into F15_A3_Emp(
+    insert into F15_A3_Emp( 
 		employee_id,
 	    employee_name,
 	    F15_A3_LAB_LAB_ID,
@@ -187,7 +187,7 @@ BEGIN
 	    lab_director_flag,
 	    exec_director_flag,
 	    chairperson_flag)
-		 VALUES (
+		 VALUES ( 
 		:NEW.employee_id,
 	    :NEW.employee_name,
 	    :NEW.F15_A3_LAB_LAB_ID,
@@ -204,7 +204,7 @@ END;
 /
 
 create view F15_A3_Chairperson_view as
-SELECT
+SELECT 
     employee_id,
     employee_name,
     F15_A3_LAB_LAB_ID,
@@ -223,7 +223,7 @@ create or replace TRIGGER F15_A3_Chairperson_trigger
      INSTEAD OF insert ON F15_A3_Chairperson_view
      FOR EACH ROW
 BEGIN
-    insert into F15_A3_Emp(
+    insert into F15_A3_Emp( 
 		employee_id,
 	    employee_name,
 	    F15_A3_LAB_LAB_ID,
@@ -236,7 +236,7 @@ BEGIN
 	    lab_director_flag,
 	    exec_director_flag,
 	    chairperson_flag)
-		 VALUES (
+		 VALUES ( 
 		:NEW.employee_id,
 	    :NEW.employee_name,
 	    :NEW.F15_A3_LAB_LAB_ID,
