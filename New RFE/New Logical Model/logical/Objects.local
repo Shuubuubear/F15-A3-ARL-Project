@@ -18,15 +18,11 @@
    <object objectType="Relation" objectID="3901CBC0-3FBD-C5F1-0ECB-88F5F462E5A8" name="Relation_26" seqName="seg_0"/>
    <object objectType="Relation" objectID="7A540A9E-873C-2AF4-2B4A-3803F3ADA20B" name="Relation_11" seqName="seg_0"/>
    <object objectType="Relation" objectID="9012167B-9432-98C9-BA00-5B6DA3756087" name="Relation_25" seqName="seg_0"/>
-   <object objectType="Relation" objectID="B4DA7CD7-1EC8-C5B0-90EC-816906B9B4B2" name="" seqName="seg_0"/>
    <object objectType="Relation" objectID="B7092E2A-12D2-607A-3B10-80F745217C60" name="Relation_13" seqName="seg_0"/>
-   <object objectType="Relation" objectID="B9463C4C-BA77-0E06-B261-62AE9E2DDD5A" name="" seqName="seg_0"/>
    <object objectType="Relation" objectID="D27ADCA4-7E64-BD93-005A-0DA5FAAB8088" name="Relation_20" seqName="seg_0"/>
    <object objectType="Relation" objectID="D6947108-4655-2DDD-04BB-2490C19AB0E0" name="Relation_21" seqName="seg_0"/>
    <object objectType="Relation" objectID="DF4CA9C9-CDAD-705D-F5A7-728C0D80145B" name="Current Status" seqName="seg_0"/>
-   <object objectType="Relation" objectID="EBB7775F-D1C6-20E1-D69D-537A26233361" name="" seqName="seg_0"/>
    <object objectType="Relation" objectID="EC8D0BDC-BAB7-19FD-8D4C-494E47E2B0E5" name="Relation_18" seqName="seg_0"/>
    <object objectType="Relation" objectID="FB8593FE-5E7D-7A76-B975-A44367308A9F" name="Relation_2" seqName="seg_0"/>
-   <object objectType="Relation" objectID="FD30E7D4-EF22-550A-38D7-EE11BF20E67C" name="" seqName="seg_0"/>
    <object objectType="Relation" objectID="FEE3F312-5447-82A0-0EAF-2441CCA94F8D" name="Relation_19" seqName="seg_0"/>
 </oracle.dbtools.crest.model.design.logical.LogicalDesign>

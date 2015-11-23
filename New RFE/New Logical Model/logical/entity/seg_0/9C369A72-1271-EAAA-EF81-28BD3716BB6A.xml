@@ -4,7 +4,7 @@
 <createdTime>2015-11-08 00:30:03 UTC</createdTime>
 <ownerDesignName>New Logical Model</ownerDesignName>
 <engineerTo>
-<item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="true"/>
+<item key="FC14C259-38B0-21D4-81F2-FE2050F9EE91" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -21,7 +21,7 @@
 <ownerDesignName>New Logical Model</ownerDesignName>
 <importedID>BE001A1F-2CAA-CD85-C179-48E7E6127FDE</importedID>
 <engineerTo>
-<item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="true"/>
+<item key="FC14C259-38B0-21D4-81F2-FE2050F9EE91" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -35,7 +35,7 @@
 <ownerDesignName>New Logical Model</ownerDesignName>
 <importedID>112381DE-45AF-254E-5D15-5D79CD359A04</importedID>
 <engineerTo>
-<item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="true"/>
+<item key="FC14C259-38B0-21D4-81F2-FE2050F9EE91" value="true"/>
 </engineerTo>
 <referedAttribute>E4A3690D-F9DF-FFB3-DA9C-333D626DB713</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -43,13 +43,13 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="rfe_id" id="7FCD2AE0-0924-7E7C-DF70-9577F169DB96">
+<Attribute name="rfe_id" id="8C2BDFDD-A40D-4800-EBB3-E84BFA2982B5">
 <createdBy>Nick</createdBy>
-<createdTime>2015-11-21 03:54:05 UTC</createdTime>
+<createdTime>2015-11-23 19:15:54 UTC</createdTime>
 <generatorID>DF4CA9C9-CDAD-705D-F5A7-728C0D80145B</generatorID>
 <ownerDesignName>New Logical Model</ownerDesignName>
 <engineerTo>
-<item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="true"/>
+<item key="FC14C259-38B0-21D4-81F2-FE2050F9EE91" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>B09C5FC0-24ED-E061-4FA5-A8F38A14D605</referedAttribute>
@@ -65,7 +65,7 @@
 <createdTime>2015-11-08 00:30:03 UTC</createdTime>
 <ownerDesignName>New Logical Model</ownerDesignName>
 <engineerTo>
-<item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="false"/>
+<item key="FC14C259-38B0-21D4-81F2-FE2050F9EE91" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

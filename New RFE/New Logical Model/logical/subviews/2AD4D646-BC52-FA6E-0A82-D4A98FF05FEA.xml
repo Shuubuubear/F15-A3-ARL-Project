@@ -20,7 +20,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="27B5607D-D90F-40F6-6231-EBAE1933D885" otype="Entity" vid="4DE09133-13F7-3D78-2B50-2E0A0236EDF7">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="693" y="311" width="211" height="135"/>
+<bounds x="693" y="311" width="211" height="112"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="406FA10D-D817-986A-D2C8-52BC13E06F46" otype="Entity" vid="AB76F360-84CB-0E5D-25AA-3D1ABD78D2BA">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -76,7 +76,7 @@
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <lineWidth>1</lineWidth>
 <points>
-<point x="904" y="446"/>
+<point x="798" y="423"/>
 <point x="1025" y="524"/>
 </points>
 </Connector>
@@ -100,8 +100,8 @@
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <lineWidth>1</lineWidth>
 <points>
-<point x="904" y="378"/>
-<point x="995" y="378"/>
+<point x="904" y="367"/>
+<point x="995" y="367"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="9012167B-9432-98C9-BA00-5B6DA3756087" otype="Relation" vid_source="993559E3-EF9C-62CE-B019-4CF3B0E39194" vid_target="AB76F360-84CB-0E5D-25AA-3D1ABD78D2BA">
@@ -116,7 +116,7 @@
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <lineWidth>1</lineWidth>
 <points>
-<point x="769" y="446"/>
+<point x="769" y="423"/>
 <point x="769" y="512"/>
 </points>
 </Connector>
@@ -140,8 +140,8 @@
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <lineWidth>1</lineWidth>
 <points>
-<point x="764" y="115"/>
-<point x="764" y="311"/>
+<point x="754" y="115"/>
+<point x="754" y="311"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="EC8D0BDC-BAB7-19FD-8D4C-494E47E2B0E5" otype="Relation" vid_source="D99DDB3D-3113-3B8A-70F2-11E08D479D49" vid_target="8A1FD711-68F2-ED3F-D9C8-A6A4AB4F0348">
@@ -164,8 +164,8 @@
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <lineWidth>1</lineWidth>
 <points>
-<point x="693" y="394"/>
-<point x="625" y="395"/>
+<point x="693" y="384"/>
+<point x="625" y="384"/>
 </points>
 </Connector>
 </connectors>

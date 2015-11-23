@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CF79204B-852F-219F-73D5-7E9EF5036A7B" name="Animation">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-23 19:53:07 UTC</createdTime>
+<ownerDesignName>Part2</ownerDesignName>
+<engineerTo>
+<item key="2E106C5B-2409-4CF3-EB12-D333CC301FB1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="anino" id="0D007041-3E2C-26C1-6041-F7DCFC7C282B">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-23 19:53:41 UTC</createdTime>
+<ownerDesignName>Part2</ownerDesignName>
+<engineerTo>
+<item key="2E106C5B-2409-4CF3-EB12-D333CC301FB1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="aniname" id="09003329-F75F-FEA4-0374-7146546DBBBA">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-23 19:54:00 UTC</createdTime>
+<ownerDesignName>Part2</ownerDesignName>
+<engineerTo>
+<item key="2E106C5B-2409-4CF3-EB12-D333CC301FB1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="10E154CA-70B3-30D9-8D98-924492E45A4A" name="Animation PK">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-23 19:53:57 UTC</createdTime>
+<ownerDesignName>Part2</ownerDesignName>
+<engineerTo>
+<item key="2E106C5B-2409-4CF3-EB12-D333CC301FB1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0D007041-3E2C-26C1-6041-F7DCFC7C282B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
