@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="406FA10D-D817-986A-D2C8-52BC13E06F46" name="F15_A3_RFE_SH">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-21 02:33:02 UTC</createdTime>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<engineerTo>
+<item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="status_id" id="F3ACF7B6-3B0B-28B0-17E6-63067B89B81D">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-21 02:33:02 UTC</createdTime>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<importedID>0093001A-D534-0467-9F81-0D8DCC492B64</importedID>
+<engineerTo>
+<item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_code" id="61982C4D-301D-E7E0-A1A8-07FC4ED26554">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-21 02:57:30 UTC</createdTime>
+<generatorID>9012167B-9432-98C9-BA00-5B6DA3756087</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<engineerTo>
+<item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="true"/>
+</engineerTo>
+<referedAttribute>E4A3690D-F9DF-FFB3-DA9C-333D626DB713</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="64889D7F-8B1F-3E89-C89C-C6DDD0C888A1">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-22 02:51:33 UTC</createdTime>
+<generatorID>3901CBC0-3FBD-C5F1-0ECB-88F5F462E5A8</generatorID>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<engineerTo>
+<item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B09C5FC0-24ED-E061-4FA5-A8F38A14D605</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9F000BD8-2005-9A32-8CCC-58140378FB19" name="F15_A3_RFE_SH PK">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-21 02:33:02 UTC</createdTime>
+<ownerDesignName>New Logical Model</ownerDesignName>
+<engineerTo>
+<item key="CDCB02A3-7C07-0EEB-65A3-DB69DFB5BF76" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F3ACF7B6-3B0B-28B0-17E6-63067B89B81D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

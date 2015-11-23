@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="status_history" directorySegmentName="seg_0" id="FE1D7FF5-1825-9E70-0177-4BDFD93C28A0">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-21 02:11:27 UTC</createdTime>
+<notes>Status History</notes>
+<ownerDesignName>New Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="212072FE-8EF8-06E3-52C9-55E96A5B12C3" value="true"/>
+</engineerTo>
+<sourcePk>8BE94622-5D32-00B0-CBFB-8411AA85D6DF</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7FDDA124-557A-CD1A-8D14-33CF00A12B18</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>00E6D0D8-9975-AE8E-8B85-246A1982344B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="Status History" id="EE8FD6F3-8338-B6B9-5072-C4B908D86E7D">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-21 02:13:24 UTC</createdTime>
+<ownerDesignName>New Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="212072FE-8EF8-06E3-52C9-55E96A5B12C3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

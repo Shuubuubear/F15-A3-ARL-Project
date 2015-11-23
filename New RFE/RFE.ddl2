@@ -134,6 +134,23 @@ select F15_A3_RFE_SC_seq.nextval into :new.status_code from dual;
 end; 
 /
 
+DROP SEQUENCE F15_A3_RFE_SH_seq ; 
+create sequence F15_A3_RFE_SH_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER F15_A3_RFE_SH_PK_trig 
+; 
+
+create or replace trigger F15_A3_RFE_SH_PK_trig 
+before insert on F15_A3_RFE_SH
+for each row 
+begin 
+select F15_A3_RFE_SH_seq.nextval into :new.status_id from dual; 
+end; 
+/
+
 DROP SEQUENCE F15_A3_RFE_TC_seq ; 
 create sequence F15_A3_RFE_TC_seq 
 start with 100 
@@ -200,12 +217,16 @@ CREATE INDEX F15_A3_RFE_rfe_id_FK_5 ON F15_A3_RFE_Doc(F15_A3_RFE_rfe_id) ;
 DROP INDEX F15_A3_RFE_S_status_id_FK_6 ;
 CREATE INDEX F15_A3_RFE_S_status_id_FK_6 ON F15_A3_RFE(F15_A3_RFE_S_status_id) ;
 DROP INDEX F15_A3_RFE_rfe_id_FK_7 ;
-CREATE INDEX F15_A3_RFE_rfe_id_FK_7 ON F15_A3_RFE_S(F15_A3_RFE_rfe_id) ;
+CREATE INDEX F15_A3_RFE_rfe_id_FK_7 ON F15_A3_RFE_SH(F15_A3_RFE_rfe_id) ;
 DROP INDEX F15_A3_RFE_SC_status_c_FK_8 ;
-CREATE INDEX F15_A3_RFE_SC_status_c_FK_8 ON F15_A3_RFE_S(F15_A3_RFE_SC_status_code) ;
-DROP INDEX F15_A3_Emp_employee_id_FK_9 ;
-CREATE INDEX F15_A3_Emp_employee_id_FK_9 ON F15_A3_RFE_TC(F15_A3_Emp_employee_id) ;
-DROP INDEX F15_A3_RFE_rfe_id_FK_10 ;
-CREATE INDEX F15_A3_RFE_rfe_id_FK_10 ON F15_A3_RFE_TC(F15_A3_RFE_rfe_id) ;
-DROP INDEX F15_A3_RFE_rfe_id_FK_11 ;
-CREATE INDEX F15_A3_RFE_rfe_id_FK_11 ON F15_A3_RFE_Task(F15_A3_RFE_rfe_id) ;
+CREATE INDEX F15_A3_RFE_SC_status_c_FK_8 ON F15_A3_RFE_SH(F15_A3_RFE_SC_status_code) ;
+DROP INDEX F15_A3_RFE_rfe_id_FK_9 ;
+CREATE INDEX F15_A3_RFE_rfe_id_FK_9 ON F15_A3_RFE_S(F15_A3_RFE_rfe_id) ;
+DROP INDEX F15_A3_RFE_SC_status_c_FK_10 ;
+CREATE INDEX F15_A3_RFE_SC_status_c_FK_10 ON F15_A3_RFE_S(F15_A3_RFE_SC_status_code) ;
+DROP INDEX F15_A3_Emp_employee_id_FK_11 ;
+CREATE INDEX F15_A3_Emp_employee_id_FK_11 ON F15_A3_RFE_TC(F15_A3_Emp_employee_id) ;
+DROP INDEX F15_A3_RFE_rfe_id_FK_12 ;
+CREATE INDEX F15_A3_RFE_rfe_id_FK_12 ON F15_A3_RFE_TC(F15_A3_RFE_rfe_id) ;
+DROP INDEX F15_A3_RFE_rfe_id_FK_13 ;
+CREATE INDEX F15_A3_RFE_rfe_id_FK_13 ON F15_A3_RFE_Task(F15_A3_RFE_rfe_id) ;

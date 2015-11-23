@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="requestor" directorySegmentName="seg_0" id="3F0A3942-B1B8-4ABD-B19C-8A82336A73EA">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-07 23:34:52 UTC</createdTime>
+<ownerDesignName>New Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="212072FE-8EF8-06E3-52C9-55E96A5B12C3" value="true"/>
+</engineerTo>
+<sourcePk>BFED9194-F6B1-E9CA-BCC2-D084395DFD8C</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B5C07A3B-9066-D115-E7E2-D224B5B60F41</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7FDDA124-557A-CD1A-8D14-33CF00A12B18</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="Requestor" id="B59F292D-27DB-FE97-55B7-27D6CEB5D015">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-07 23:39:21 UTC</createdTime>
+<ownerDesignName>New Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="212072FE-8EF8-06E3-52C9-55E96A5B12C3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

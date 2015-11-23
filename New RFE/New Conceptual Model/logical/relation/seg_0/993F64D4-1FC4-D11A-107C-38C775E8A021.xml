@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Current Status" directorySegmentName="seg_0" id="993F64D4-1FC4-D11A-107C-38C775E8A021">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-07 23:56:13 UTC</createdTime>
+<ownerDesignName>New Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="212072FE-8EF8-06E3-52C9-55E96A5B12C3" value="true"/>
+</engineerTo>
+<sourcePk>C49CB144-FCAC-C1E4-D305-7BF389FDA21B</sourcePk>
+<targetPk>8BE94622-5D32-00B0-CBFB-8411AA85D6DF</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>45E9A2C5-7C39-BBDE-457D-89AF622B9E6F</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>7FDDA124-557A-CD1A-8D14-33CF00A12B18</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="Current Status" id="D276BD6F-17D8-5A2E-366A-10E6B2AFD6B6">
+<createdBy>Nick</createdBy>
+<createdTime>2015-11-07 23:59:47 UTC</createdTime>
+<ownerDesignName>New Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="212072FE-8EF8-06E3-52C9-55E96A5B12C3" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>
